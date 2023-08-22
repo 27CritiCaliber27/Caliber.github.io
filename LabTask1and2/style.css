@@ -1,0 +1,26 @@
+header{
+    background-color: rgb(150, 150, 248);
+    text-align: center;
+}
+body{
+    background-color: gray;
+    font-size: 75%;
+    font-family: Arial;
+    font-size: 150%;
+}
+h1{
+    color: cyan;
+}
+nav{
+    font-variant: small-caps;
+}
+h2{
+    background-color: crimson;
+
+}
+section{
+    font-style: italic;
+}
+footer{
+    background-color: green;
+}
