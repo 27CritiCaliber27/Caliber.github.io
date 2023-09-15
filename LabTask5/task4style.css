@@ -1,0 +1,104 @@
+header {
+    text-align: center;
+    border-style: groove;
+    background: gray;
+
+}
+
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+    text-align: center;
+}
+
+div.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.NavBar {
+    background: red;
+    border-style: groove;
+    height: 30px;
+    font-size: 15px;
+    text-align: left;
+    font-family: "Times New Roman";
+}
+
+a.weird {
+    float: right;
+}
+
+div.SchoolBox{
+    width: 850px;
+    height: 450px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+}
+
+div.aboutSelf{
+    width: 350px;
+    height: 600px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+    float: right;
+}
+
+div.CEABox{
+    width: 850px;
+    height: 850px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+}
+
+div.foodBox {
+    width: 350px;
+    height: 600px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+    float: right;
+}
+.DarkMode {
+    background-color: navy;
+    color: white;
+}
+.LightMode {
+    background-color: red;
+    color: black;
+}
+
+li{
+    font-size: 20%;
+    text-align:justify;
+}
+
+p {
+    text-align: justify;
+}
+
+h5 {
+    font-size: 125%;
+}
+
+footer {
+    border-style: groove;
+    background: red;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    padding: 1%;
+    font-weight: 100;
+}
