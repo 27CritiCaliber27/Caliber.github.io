@@ -1,0 +1,197 @@
+header {
+    text-align: center;
+    border-style: groove;
+    background-image: url("cycloneWire.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;  
+    color: red;
+}
+
+a {
+    border-style: groove;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-display: bold;
+    color: red;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+body {
+    background-image:url(destinyBack.png); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+    text-align: center;
+}
+
+section.weapons {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.m4a1 {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+
+}
+
+div.m4a1Hover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.m4a1Hover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.famas {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+
+}
+div.famasHover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.famasHover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.fnFAL {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+
+}
+div.fnFALHover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.fnFALHover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.groza {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+
+}
+div.grozaHover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.grozaHover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.steyrAug {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+
+}
+div.steyrAugHover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.steyrAugHover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.addItem {
+    width: 350px;
+    height: 700px;
+    background-color: gray;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+}
+
+div.addItemHover {
+    padding: 1%;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 900px;
+}
+      
+div.addItemHover:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+button.addItem {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+div.stats{
+    text-align: justify;
+}
+
+div.navBar {
+    background: blue;
+    border-style: groove;
+    height: 30px;
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+a.cart {
+    float: right;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+footer {
+    text-align: center;
+    border-style: groove;
+    background-image: url("cycloneWire.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    color: red;
+    left: 0;
+    bottom: 0;
+}

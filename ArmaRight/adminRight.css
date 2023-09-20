@@ -1,0 +1,64 @@
+header {
+    text-align: center;
+    border-style: groove;
+    background-image: url("cycloneWire.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;  
+    color: red;
+}
+
+body {
+    background-image:url(destinyBack.png); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+    text-align: center;
+}
+
+div.navBar {
+    background: blue;
+    border-style: groove;
+    height: 30px;
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+a {
+    border-style: groove;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-display: bold;
+    color: red;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+a.cart {
+    float: right;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+div.body {
+    text-align: justify;
+    background-color: gray;
+    border-style: groove;
+    padding: 1%;
+    margin: 1%;
+}
+
+footer {
+    text-align: center;
+    border-style: groove;
+    background-image: url("cycloneWire.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;  
+    color: red;
+}
