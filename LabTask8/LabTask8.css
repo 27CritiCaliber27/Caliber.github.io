@@ -1,0 +1,38 @@
+body {
+    background-image: url("images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 140%;
+
+}
+
+/* CSS styles for the table */
+table {
+    background-color: white;
+    width: 50%;
+    border-collapse: collapse;
+    border-style: groove;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* CSS styles for the Zodiac sign images */
+img {
+    width: 100px; /* Adjust image size as needed */
+    height: auto;
+}
+
+/* Additional styles as needed */
+h1 {
+    text-align: center;
+}
