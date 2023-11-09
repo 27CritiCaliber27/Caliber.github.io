@@ -116,9 +116,10 @@ section {
     width: 100%;
     height: 100%;
     display:list-item;
-    background-color: gray;
+    background-color: white;
     border-style: groove;
     padding-bottom: 1%;
+    margin-top: 20px;
 }
 
 div.cartContent {
@@ -133,11 +134,11 @@ button {
 
 div.body {
     text-align: justify;
-    background-color: gray;
+    background-color: white;
     border-style: groove;
     padding: 1%;
     margin: 1%;
-    margin-top: 20px;
+    
 }
 
 div.references {

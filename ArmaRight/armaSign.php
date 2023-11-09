@@ -1,7 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel = "stylesheet" href = "armaSign.css">
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-image:url(images/destinyBack.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;  
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type = "text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type = "password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type = "submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.signuperror {
+    color: red;
+    margin-top: 10px;
+}
+.signupstatus {
+    color: green;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: grey;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+  }
+        </style>
         <link rel = "shortcut icon" type = "image/png" href = "images/LogoFinalTitle.png">
         <title> Sign Up </title>
     </head>

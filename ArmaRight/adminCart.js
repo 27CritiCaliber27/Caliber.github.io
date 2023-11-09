@@ -6,7 +6,7 @@ const cartItems = cartItemsJSON ? JSON.parse(cartItemsJSON) : [];
 const cartContent = document.getElementById("cartContent");
 
 if (cartItems.length === 0) {
-    cartContent.innerHTML = "<p> Your cart is empty. </p>";
+    cartContent.innerHTML = "<p> There are no orders. </p>";
 } else {
     const cartList = document.createElement("ul");
 
