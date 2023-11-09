@@ -256,7 +256,7 @@ div.stats{
                 </div>
             </div>
         
-            <a class = "devPage" href="armaLog.php"> Log Out </a>
+            <a class = "devPage" href="index.php"> Log Out </a>
         </div>
         <section class = "weapons">
 

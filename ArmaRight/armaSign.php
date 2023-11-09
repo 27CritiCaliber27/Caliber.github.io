@@ -51,7 +51,7 @@
                 echo '<form>
                         <p class = "signupstatus"> Signup successful! </p>';
                 echo '<div class = "button">
-                        <a class="btn" href="armaLog.php"> Log In </a>
+                        <a class="btn" href="index.php"> Log In </a>
                     </div>';
                 echo '</form>';
             }
@@ -84,7 +84,7 @@
                         <input type = "text" placeholder = "Enter Gun License Number" name = "gunlic" id = "license" required>
     
                         <input type = "submit" value = "Sign Up" name = "signUp" id = "signUpButton">
-                        <p> Already have an account? <a href = "armaLog.php"> Log in here! </a> </p>
+                        <p> Already have an account? <a href = "index.php"> Log in here! </a> </p>
                     </form>';
             }
         ?>

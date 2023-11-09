@@ -20,7 +20,7 @@
                 </div>
             </div>
         
-            <a class = "devPage" href="armaLog.php"> Log Out </a>
+            <a class = "devPage" href="index.php"> Log Out </a>
         </div>
         <section>
             <h3> Orders </h3>

@@ -5,13 +5,13 @@ if (isset($_POST['login-submit'])) {
     $password = $_POST['pwd'];
 
     if (empty($mailuid) || empty($password)) {
-        header("Location: armaLog.php?error=emptyfields");
+        header("Location: index.php?error=emptyfields");
         exit();
     } else {
         $sql = "SELECT * FROM test WHERE userName=? OR email=?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: armaLog.php?error=sqlerror");
+            header("Location: index.php?error=sqlerror");
             exit();
         } else {
             mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
@@ -20,30 +20,30 @@ if (isset($_POST['login-submit'])) {
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['passUsers']);
                 if ($pwdCheck == false) {
-                    header("Location: armaLog.php?error=wrongpwd");
+                    header("Location: index.php?error=wrongpwd");
                     exit();
                 } else if ($pwdCheck == true) {
                     session_start();
                     $_SESSION['userId'] = $row['id'];
                     $_SESSION['userUid'] = $row['userName'];
 
-                    header("Location: armaLog.php?login=success");
+                    header("Location: index.php?login=success");
                     exit();
                 } 
                 
                 else {
-                    header("Location: armaLog.php?error=nouser");
+                    header("Location: index.php?error=nouser");
                     exit();
                 }
             } else {
-                header("Location: armaLog.php?error=nouser");
+                header("Location: index.php?error=nouser");
                 exit();
             }
         }
     }
 } 
 else {
-    header("Location: armaLog.php?error=accessdenied");
+    header("Location: index.php?error=accessdenied");
     exit();
 }
 ?>

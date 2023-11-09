@@ -117,7 +117,7 @@ ul.weapons {
 li.m4a1 {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -138,7 +138,7 @@ div.m4a1Hover:hover {
 li.famas {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -158,7 +158,7 @@ div.famasHover:hover {
 li.fnFAL {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -178,7 +178,7 @@ div.fnFALHover:hover {
 li.groza {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -198,7 +198,7 @@ div.grozaHover:hover {
 li.steyrAug {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -262,7 +262,7 @@ button {
         
             <a class = "devPage" href="cart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
-            <a class = "devPage" href="armaLog.php"> Log Out </a>
+            <a class = "devPage" href="index.php"> Log Out </a>
         </div>
         
         <ul class = "weapons">

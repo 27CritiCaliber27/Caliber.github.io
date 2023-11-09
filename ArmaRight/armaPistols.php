@@ -117,7 +117,7 @@ section.weapons {
 div.glock {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -127,7 +127,7 @@ div.glock {
 div.usp {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -158,7 +158,7 @@ div.glockHover:hover {
 div.desertEagle {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -178,7 +178,7 @@ div.desertEagleHover:hover {
 div.fiveSeven {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -198,7 +198,7 @@ div.fiveSevenHover:hover {
 div.cz75o {
     width: 350px;
     height: 700px;
-    background-color: gray;
+    background-color: white;
     padding: 1%;
     margin: 1%;
     border-style: groove;
@@ -244,7 +244,7 @@ div.stats{
         
             <a class = "devPage" href="cart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
-            <a class = "devPage" href="armaLog.php"> Log Out </a>
+            <a class = "devPage" href="index.php"> Log Out </a>
         </div>
 
         <section class = "weapons">

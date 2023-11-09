@@ -263,7 +263,7 @@ a.devPage {
         
             <a class = "devPage" href="cart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
-            <a class = "devPage" href="armaLog.php"> Log Out </a>
+            <a class = "devPage" href="index.php"> Log Out </a>
         </div>
         
         <ul class = "weapons">
