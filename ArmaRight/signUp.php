@@ -41,7 +41,7 @@ if(isset($_POST['signUp'])) {
 
     else {
 
-        $sql = "SELECT userName FROM test WHERE userName=?";
+        $sql = "SELECT userName FROM accounts WHERE userName=?";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt , $sql)) {
             header("Location: armaSign.php?error=sqlerror");
@@ -60,7 +60,7 @@ if(isset($_POST['signUp'])) {
             
             else {
 
-                $sql =  "INSERT INTO test (is_admin, firstName, lastName, userName, email, passUsers, license ) VALUES ('0', ?, ?, ?, ?, ?, ?)";
+                $sql =  "INSERT INTO accounts (is_admin, firstName, lastName, userName, email, passUsers, license ) VALUES ('0', ?, ?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: armaSign.php?error=sqlerror");
