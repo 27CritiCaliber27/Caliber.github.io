@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: left;
-    background-image:url(destinyBack.png);
+    background-image:url(images/destinyBack.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100%;  
@@ -10,13 +10,14 @@ body {
 
 header {
     text-align: center;
-    border-style: groove;
-    background-image: url("cycloneWire.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 100%;  
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: red;
     font-family:'Times New Roman', Times, serif;
+}
+
+h3 {
+    text-align: center;
 }
 
 form {

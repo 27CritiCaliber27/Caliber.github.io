@@ -21,7 +21,7 @@ if (cartItems.length === 0) {
 
 function confirmCart() {
     // Notification for success order
-    alert("Hehehehehe, thank you!")
+    alert("Order transaction successful!");
     // Remove cart items from local storage
     localStorage.removeItem("cartItems");
 
