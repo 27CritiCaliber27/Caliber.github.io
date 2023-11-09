@@ -110,14 +110,7 @@ input[type="submit"]:hover {
                         <input type="submit" value = "Log Out" name = "logout-submit" id = "logout">
                     </div>';
             echo '<div class="button">
-                    <input type = "submit" value = "Home" onclick = "redirectToAnotherPage()">
-                </div>';
-
-            echo '<script>
-                    function redirectToAnotherPage() {
-                    window.location.href = "armaRight.php";
-                }
-                </script>
+                    <a href = "armaRight.php"> Go to Home </a>
                 </form>';
 
     }
