@@ -1,3 +1,28 @@
+<?php
+// Assuming you have a database connection here
+$conn = mysqli_connect("localhost", "root", "", "armadata");
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Check if the form is submitted for clearing orders
+if (isset($_POST["clearOrders"])) {
+    // Logic to clear orders (truncate the order_items table)
+    $sqlTruncate = "TRUNCATE TABLE order_items";
+    if (mysqli_query($conn, $sqlTruncate)) {
+        echo '<script>alert("Orders ready for delivery!");</script>';
+    } else {
+        echo '<script>alert("Error clearing orders: ' . mysqli_error($conn) . '");</script>';
+    }
+}
+
+// Fetch orders from the database
+$sql = "SELECT * FROM order_items";
+$result = mysqli_query($conn, $sql);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -128,7 +153,7 @@ div.cartContent {
 
 button {
     border-style: groove;
-    width: 5%;
+    width: auto;
     height: 5%;
 }
 
@@ -147,6 +172,16 @@ div.references {
     border-style: groove;
     padding: 1%;
     margin: 1%;
+}
+
+tr {
+    text-align: center;
+    background-color: white;
+}
+
+table td{
+    background-color: grey;
+    border-style: groove;
 }
         </style>
         <link rel = "shortcut icon" type = "image/png" href = "images/LogoFinalTitle.png">
@@ -170,12 +205,48 @@ div.references {
             <a class = "devPage" href="index.php"> Log Out </a>
         </div>
         <section>
-            <h3> Orders </h3>
-            <div id = "cartContent">
-                <!-- Shows the ordered items of the customer -->
-            </div>
-            <button onclick = "confirmCart()"> Accept and Ship Order </button>
-            <button onclick = "clearCart()"> Reject Order </button>
+        <h3>Orders</h3>
+        <form method="post" action="adminCart.php">
+        
+    
+
+    <!-- Your existing HTML content -->
+
+    <?php
+    // Display the table of orders
+    if (mysqli_num_rows($result) > 0) {
+        ?>
+        <table border="1">
+            <tr>
+                <th>Product ID</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Price</th>
+                <button type="submit" name="clearOrders">Accept Orders</button>
+            </tr>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <tr>
+                    <td><?php echo $row["product_id"]; ?></td>
+                    <td><?php echo $row["quantity"]; ?></td>
+                    <td>$ <?php echo $row["price"]; ?></td>
+                    <td>$ <?php echo number_format($row["quantity"] * $row["price"], 2); ?></td>                    
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
+        <?php
+    } else {
+        echo "<p>No orders available.</p>";
+    }
+
+    // Close the database connection
+    mysqli_close($conn);
+    ?>
+        
+        </form>
         </section>
         <script src = "adminCart.js"></script>
     </body>

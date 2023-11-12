@@ -234,7 +234,7 @@ div.stats{
         <div class="navbar">
             <a href="armaRight.php"> Home </a>
             <div class="subnav">
-                <button class="subnavbtn"> Shop <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn"> Weapons <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                     <a href="armaPistols.php"> Pistols </a>
                     <a href="armaSMG.php"> SMGs </a>
@@ -242,7 +242,7 @@ div.stats{
                 </div>
             </div>
         
-            <a class = "devPage" href="cart.php"> Cart </a>
+            <a class = "devPage" href="productCart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
             <a class = "devPage" href="index.php"> Log Out </a>
         </div>
@@ -261,7 +261,6 @@ div.stats{
                         <p> Safety: Features a trigger safety and firing pin safety. </p>
                         <p> Accuracy: Known for its accuracy and reliability, even in adverse conditions. </p>
                     </div>
-                    <button onclick = 'buttonMode("Glock-17", 250.0)'> Buy ($250) </button>
                 </div>>
             </div>
 
@@ -277,7 +276,6 @@ div.stats{
                         <p> Safety: Equipped with multiple safety features, including a manual safety/decocking lever and firing pin block. </p>
                         <p> Accuracy: Known for its accuracy and reliable performance in various conditions. </p>
                     </div>
-                    <button onclick = 'buttonMode("HK USP", 250.0)'> Buy ($250) </button>
                 </div>
             </div>
 
@@ -293,7 +291,6 @@ div.stats{
                         <p> Safety: Equipped with a manual safety lever. </p>
                         <p> Accuracy: Known for its accuracy and long-range capabilities, often used in target shooting competitions. </p>
                     </div>
-                    <button onclick = 'buttonMode("Desert Eagle", 750.0)'> Buy ($750) </button>
                 </div>
             </div>
 
@@ -309,7 +306,6 @@ div.stats{
                         <p> Safety: Equipped with ambidextrous manual safety and trigger safety. </p>
                         <p> Accuracy: Known for its accuracy, especially at medium distances. </p>
                     </div>
-                    <button onclick = 'buttonMode("FN Five-seveN", 550.0)'> Buy ($550) </button>
                 </div>
             </div>
 
@@ -328,10 +324,8 @@ div.stats{
                         <p> Accuracy: Benefits from a combination of factors, a high-quality barrel, adjustable sights, and a predictable trigger pull 
                             that contribute to consistent shot placement and tight groupings on target. </p>
                     </div>
-                    <button onclick = 'buttonMode("CZ-75 Omega", 500.0)'> Buy ($500) </button>
                 </div>
             </div>
         </section>
-        <script src = "armaPistols.js"></script>
     </body>
 </html>

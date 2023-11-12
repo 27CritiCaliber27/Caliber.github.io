@@ -233,6 +233,15 @@ button.addItem {
     background-color: white;
 }
 
+div.addItemForm {
+    width: 350px;
+    height: 700px;
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+    border-style: groove;
+}
+
 div.stats{
     text-align: justify;
 }
@@ -336,12 +345,52 @@ div.stats{
             </div>
 
             <div class = "addItemHover">
-                <div class = "addItem">
-                    <button class = "addItem" onclick = "buttonMode()"> Add an item </button>
+                <div class="addItem">
+                    <button class="addItem" onclick="openAddItemForm()">Add an item</button>
                 </div>
             </div>
             
+            <div id ="addItemForm" style="display: table-column;">
+                <form method="post" action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return validateForm()">
+                    <label for="newWeaponName">Weapon Name:</label>
+                    <input type="text" name="newWeaponName" required><br>
+
+                    <label> Weapon Characteristics </label>
+
+                    <label for = "caliber"> Caliber: </label>
+                    <input type = "text" name = "caliber" required>
+
+                    <label for = "action"> Action: </label>
+                    <input type = "text" name = "action" required>
+
+                    <label for = "capacity"> Capacity: </label>
+                    <input type = "text" name = "capacity" required>
+
+                    <label for = "rate"> Rate of Fire: </label>
+                    <input type = "text" name = "rate" required>
+
+                    <label for = "accuracy"> Accuracy: </label>
+                    <input type = "text" name = "accuracy" required>
+
+                    <label for = "price"> Price: </label>
+                    <input type = "text" name = "price" required>
+
+                    <label for = "stock"> Initial Stock: </label>
+                    <input type = "text" name = "stock" required>
+
+                    <input type="submit" name = "addWeapon" value = "Add Weapon">
+                </form>
+            
         </section>
-        <script src = "adminAssault.js"></script>
+        <script>
+        function openAddItemForm() {
+                document.getElementById("addItemForm").style.display = "block";
+        }
+
+        function validateForm() {
+            // You can add validation logic here if needed
+            return true;
+        }
+        </script>
     </body>
 </html>

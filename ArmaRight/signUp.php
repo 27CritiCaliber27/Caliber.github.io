@@ -29,8 +29,8 @@ if(isset($_POST['signUp'])) {
         exit();
 
     }
-    else if (!preg_match("/^[0-9]*$/", $license)) {
-        header("Location: armaSign.php?error=invalidlicense=".$license);
+    else if (!preg_match("/^[0-9]{10}$/", $license)) { // Added check for 10 digits
+        header("Location: armaSign.php?error=invalidlicense=" , $license);
         exit();
 
     }

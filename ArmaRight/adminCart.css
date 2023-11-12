@@ -104,6 +104,7 @@ body {
     background-attachment: fixed;
     background-size: 100%;   
     text-align: center;
+    
 }
 
 
@@ -116,6 +117,7 @@ section {
     border-style: groove;
     padding-bottom: 1%;
     margin-top: 20px;
+    
 }
 
 div.cartContent {
@@ -144,3 +146,24 @@ div.references {
     padding: 1%;
     margin: 1%;
 }
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px; /* Add margin to improve spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }

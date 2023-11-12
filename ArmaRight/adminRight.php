@@ -23,13 +23,51 @@
             <a class = "devPage" href="armaLog.php"> Log Out </a>
         </div>
         <section>
-            <h3> Orders </h3>
-            <div id = "cartContent">
-                <!-- Shows the ordered items of the customer -->
-            </div>
-            <button onclick = "confirmCart()"> Accept and Ship Order </button>
-            <button onclick = "clearCart()"> Reject Order </button>
+        <h3>Orders</h3>
+        <form method="post" action="acceptOrder.php">
+            <table border="1">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+
+                <?php
+                // Assuming you have a database connection here
+                $conn = mysqli_connect("localhost", "root", "", "your_database_name");
+
+                // Check connection
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+
+                // Fetch orders from the database
+                $sql = "SELECT * FROM orders";
+                $result = mysqli_query($conn, $sql);
+
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                        <tr>
+                            <td><?php echo $row["product_name"]; ?></td>
+                            <td><?php echo $row["quantity"]; ?></td>
+                            <td>$ <?php echo $row["price"]; ?></td>
+                            <td>$ <?php echo number_format($row["quantity"] * $row["price"], 2); ?></td>
+                            <td><button type="submit" name="acceptOrder" value="<?php echo $row["order_id"]; ?>">Accept Order</button></td>
+                        </tr>
+                        <?php
+                    }
+                } else {
+                    echo "<tr><td colspan='5'>No orders available.</td></tr>";
+                }
+
+                // Close the database connection
+                mysqli_close($conn);
+                ?>
+            </table>
+        </form>
         </section>
-        <script src = "adminCart.js"></script>
     </body>
 </html>

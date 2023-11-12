@@ -12,7 +12,7 @@
         <div class="navbar">
             <a href="armaRight.php"> Home </a>
             <div class="subnav">
-                <button class="subnavbtn"> Shop <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn"> Weapons <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                     <a href="armaPistols.php"> Pistols </a>
                     <a href="armaSMG.php"> SMGs </a>
@@ -20,7 +20,7 @@
                 </div>
             </div>
         
-            <a class = "devPage" href="cart.php"> Cart </a>
+            <a class = "devPage" href="productCart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
             <a class = "devPage" href="index.php"> Log Out </a>
         </div>

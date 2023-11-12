@@ -253,7 +253,7 @@ a.devPage {
         <div class="navbar">
             <a href="armaRight.php"> Home </a>
             <div class="subnav">
-                <button class="subnavbtn"> Shop <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn"> Weapons <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                     <a href="armaPistols.php"> Pistols </a>
                     <a href="armaSMG.php"> SMGs </a>
@@ -261,7 +261,7 @@ a.devPage {
                 </div>
             </div>
         
-            <a class = "devPage" href="cart.php"> Cart </a>
+            <a class = "devPage" href="productCart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
             <a class = "devPage" href="index.php"> Log Out </a>
         </div>
@@ -280,7 +280,6 @@ a.devPage {
                         <p> Rate of Fire: Known for its exceptionally high rate of fire, often exceeding 1,000 rounds per minute. </p>
                         <p> Sights: Equipped with rudimentary iron sights, typically consisting of a front post and a rear notch. </p>
                     </div>
-                    <button onclick = 'buttonMode("Mac-10", 850.0)'> Buy ($850) </button>
                 </li>>
             </div>
 
@@ -296,7 +295,6 @@ a.devPage {
                         <p> Rate of Fire: Selectable rate of fire, typically around 800 rounds per minute. </p>
                         <p> Sights: Equipped with adjustable, high-quality iron sights, ensuring accuracy and target acquisition. </p>
                     </div>
-                    <button onclick = 'buttonMode("HK MP5", 1250.0)'> Buy ($1250) </button>
                 </li>
             </div>
 
@@ -312,7 +310,6 @@ a.devPage {
                         <p> Rate of Fire: Selectable rate of fire, typically around 600 rounds per minute. </p>
                         <p> Sights: Equipped with adjustable sights for improved accuracy and target acquisition. </p>
                     </div>
-                    <button onclick = 'buttonMode("HK UMP45", 1200.0)'> Buy ($1200) </button>
                 </li>
             </div>
 
@@ -328,7 +325,6 @@ a.devPage {
                         <p> Rate of Fire: Typically around 900 rounds per minute. </p>
                         <p> Sights: Equipped with integrated iron sights, often with a top-mounted Picatinny rail for optics or accessories. </p>
                     </div>
-                    <button onclick = 'buttonMode("FN P90", 2350.0)'> Buy ($2350) </button>
                 </li>
             </div>
 
@@ -344,7 +340,6 @@ a.devPage {
                         <p> Rate of Fire: Typically around 1,200 rounds per minute in fully automatic mode; semi-automatic versions are also available. </p>
                         <p> Sights: Equipped with flip-up iron sights and often features a top Picatinny rail for optics or accessories. </p>
                     </div>
-                    <button onclick = 'buttonMode("Kriss Vector", 2200.0)'> Buy ($2200) </button>
                 </li>
             </div>
         </ul>

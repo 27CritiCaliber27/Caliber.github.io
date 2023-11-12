@@ -252,7 +252,7 @@ button {
         <div class="navbar">
             <a href="armaRight.php"> Home </a>
             <div class="subnav">
-                <button class="subnavbtn"> Shop <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn"> Weapons <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                     <a href="armaPistols.php"> Pistols </a>
                     <a href="armaSMG.php"> SMGs </a>
@@ -260,7 +260,7 @@ button {
                 </div>
             </div>
         
-            <a class = "devPage" href="cart.php"> Cart </a>
+            <a class = "devPage" href="productCart.php"> Cart </a>
             <a class = "devPage" href="devPage.php"> Contact Us </a>
             <a class = "devPage" href="index.php"> Log Out </a>
         </div>
@@ -279,7 +279,6 @@ button {
                         <p> Rate of Fire: Fully automatic mode typically has a cyclic rate of around 700-950 rounds per minute. </p>
                         <p> Accuracy: Renowned for its accuracy within its effective range, making it effective in both close quarters and medium-range engagements. </p>
                     </div>
-                    <button onclick = "buttonMode('M4A1', 3100.0)"> Buy ($3100) </button>
                 </li>>
             </div>
 
@@ -295,7 +294,6 @@ button {
                         <p> Rate of Fire: Capable of a cyclic rate of approximately 900 rounds per minute. </p>
                         <p> Accuracy: Generally accurate within its effective range, but limitations may exist due to its relatively short barrel length. </p>
                     </div>
-                    <button onclick = "buttonMode('FAMAS', 2250.0)"> Buy ($2250) </button>
                 </li>
             </div>
 
@@ -311,7 +309,6 @@ button {
                         <p> Rate of Fire: Fully automatic mode typically has a cyclic rate of around 650-700 rounds per minute. </p>
                         <p> Accuracy: Capable of delivering accurate fire out to medium ranges, especially in semi-automatic mode. </p>
                     </div>
-                    <button onclick = "buttonMode('FN FAL', 3500.0)"> Buy ($3500) </button>
                 </li>
             </div>
 
@@ -327,7 +324,6 @@ button {
                         <p> Rate of Fire: Fully automatic mode typically has a cyclic rate of around 700-800 rounds per minute. </p>
                         <p> Accuracy: Capable of delivering accurate fire within its effective range, especially when used with subsonic ammunition. </p>
                     </div>
-                    <button onclick = "buttonMode('OTs-14', 3200.0)"> Buy ($3250) </button>
                 </li>
             </div>
 
@@ -343,10 +339,8 @@ button {
                         <p> Rate of Fire: Fully automatic mode typically has a cyclic rate of around 680-750 rounds per minute. </p>
                         <p> Accuracy: Renowned for its accuracy, with the integrated optic aiding in precise shooting. </p>
                     </div>
-                    <button onclick = "buttonMode('Steyr Aug', 3400.0)"> Buy ($3400) </button>
                 </li>
             </div>
         </ul>
-        <script src = "armaAssault.js"></script>
     </body>
 </html>
